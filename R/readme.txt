@@ -1,1 +1,0 @@
-The functions are copied from the folder on Dropbox/R/functions
