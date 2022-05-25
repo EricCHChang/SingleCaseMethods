@@ -45,16 +45,19 @@ Relative to the Windows exe programs provided by Dr. John R. Crawford, key stren
 
 
 
-## Examples
+## Examples & Demonstration
 
 ### Python
 
-```python
-# Import all functions for single-case methods
-import crawfordtests as cft
-# 
-cft.crawford_t()
-```
+* See the Jupyter Notebook [demo_singlecase.ipynb](Python/demo_singlecase.ipynb)
+
+
+
+## Important Note
+
+* The current functions for Crawford's single-case methodologies do not support the Bayesian approach (Crawford & Garthwaite, 2007).
+
+* The results of the interval estimate computed by the Python functions are slightly different from those computed by Crawford's programs. It is likely due to differences in how the noncentrality parameter of a noncentral t-distribution is computed between different programming languages.
 
 
 
@@ -64,7 +67,11 @@ cft.crawford_t()
 
 * Crawford, J. R., & Garthwaite, P. H. (2005). Testing for suspected impairments and dissociations in single-case studies in neuropsychology: evaluation of alternatives using monte carlo simulations and revised tests for dissociations. *Neuropsychology, 19*(3), 318.
 
+* Crawford, J. R., & Garthwaite, P. H. (2007). Comparison of a single case to a control or normative sample in neuropsychology: Development of a Bayesian approach. *Cognitive Neuropsychology, 24*(4), 343-372.
+
 * Crawford, J. R., Garthwaite, P. H., & Porter, S. (2010). Point and interval estimates of effect sizes for the case-controls design in neuropsychology: rationale, methods, implementations, and proposed reporting standards. *Cognitive neuropsychology, 27*(3), 245-260.
 
 * Crawford, J. R., & Howell, D. C. (1998). Comparing an individual's test score against norms derived from small samples. *The Clinical Neuropsychologist, 12*(4), 482-486.
+
+
 
