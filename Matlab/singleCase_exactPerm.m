@@ -28,8 +28,17 @@ function [meanDiff_act,meanDiff_perm,rnk,p_val_Perm,CI_perm] = singleCase_exactP
 %
 % Written by C.-H. Eric Chang, Aug, 2019
 %
-%%
 
+%% Set default values
+if ~exist('alphaLevel', 'var')
+    alphaLevel = 0.95;
+end
+
+if ~exist('tail', 'var')
+    tail = 2;
+end
+
+%%
 % Check missing data in the control group and if so, remove it
 ind_missData = find(isnan(controlGroup));
 nMissData = sum(isnan(controlGroup));
