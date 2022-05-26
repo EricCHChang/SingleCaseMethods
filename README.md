@@ -12,7 +12,7 @@ Further, the programs require users to manually input values to run a single tes
 In other words, users need to calculate the mean and standard deviation of controls' scores (and/or other statistics) in other software (e.g., Excel, R, Python) and then enter them into the programs.
 This is an error-prone process (i.e., may incorrectly enter the values) and users will need to repeat the same steps multiple times for different tests/measures.
 
-Therefore, I wrote functions of the singe-case methodologies in Matlab, Python and R based on the formulae in the papers by Crawford and his colleagues.
+Therefore, based on the formulae in the papers published by Crawford and his colleagues, I wrote functions that implement the singe-case methodologies in several programming languages commonly used in academia, including Python, R, and Matlab. 
 
 Relative to the Windows exe programs provided by Dr. John R. Crawford, key strength of the functions here include:
 * Users can implement the single-case methodologies on computers of all kinds of OS, including Microsoft Windows, MacOS, Linux, as long as they have access to Matlab, Python, or R.
@@ -50,6 +50,14 @@ Relative to the Windows exe programs provided by Dr. John R. Crawford, key stren
 ### Python
 
 * See the Jupyter Notebook [demo_singlecase.ipynb](Python/demo_singlecase.ipynb)
+
+### R
+
+* See the R Notebook [demo_singlecase.Rmd](R/demo_singlecase.Rmd)
+
+### Matlab
+
+* See the Matlab live script [demo_singlecase.mlx](Matlab/demo_singlecase.mlx)
 
 
 
