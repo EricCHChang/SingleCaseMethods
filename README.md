@@ -53,11 +53,11 @@ Relative to the Windows exe programs provided by Dr. John R. Crawford, key stren
 
 ### R
 
-* See the R Notebook [demo_singlecase.Rmd](R/demo_singlecase.Rmd)
+* See the R script [demo_singlecase.R](R/demo_singlecase.R) or R Notebook [demo_singlecase.Rmd](R/demo_singlecase.Rmd)
 
 ### Matlab
 
-* See the Matlab live script [demo_singlecase.mlx](Matlab/demo_singlecase.mlx)
+* See the Matlab script [demo_singlecase.m](Matlab/demo_singlecase.m)
 
 
 
