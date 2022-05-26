@@ -72,10 +72,18 @@ CrawfordRSDT <- function(caseData, controlData, alphaLevel = 0.05) {
   
   # Statistical test results
   h <- ifelse(abs(psi) > y, 1, 0) # whether null hypothesis is rejected (1:yes; 0:no)
-  tval <- sqrt( (-b + sqrt(b^2-4*a*c)) / (2*a) )
+  tVal <- sqrt( (-b + sqrt(b^2-4*a*c)) / (2*a) )
   tVal <- ifelse(psi>0, tVal, -tVal)
-  pval <- 2*(1-pt(abs(tval), df=nC-1)) #two-tailed p-value
-  result <- data.frame(t = tval, df = nC-1, p = pval)
+  pval <- 2*(1-pt(abs(tVal), df=nC-1)) #two-tailed p-value
+  
+  # Effect size (as a z-score)
+  diff1 <- caseData[1]-averC1
+  diff2 <- caseData[2]-averC2
+  corVal <- cor(controlData[,1], controlData[,2]) # correlation between the 2 tasks in control
+  effSize = ( (diff1/stdC1) - (diff2/stdC2) ) / sqrt(2-2*corVal)
+  
+  # Return the results
+  result <- data.frame(t = tVal, df = nC-1, p = pval, Zdcc=effSize)
   return(result) 
 
   }
